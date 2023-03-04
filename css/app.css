@@ -2251,6 +2251,12 @@ main >.inner {
 .social .item.twitter i {
   color: #00aff0;
 }
+.social .item.pixiv::before {
+  background-color: ##0197fa;
+}
+.social .item.pixiv i {
+  color: ##0197fa;
+}
 .social .item:focus i,
 .social .item:hover i {
   color: var(--grey-0);
