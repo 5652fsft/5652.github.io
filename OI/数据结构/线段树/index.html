@@ -147,7 +147,7 @@
   <div class="body md" itemprop="articleBody">
     
 
-    <p>线段树是用来 ==<strong> 维护区间信息</strong> == 的数据结构。</p>
+    <p>线段树是用来<mark>维护区间信息</mark>的数据结构。</p>
 <p>线段树可在 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mi>log</mi><mo>⁡</mo><mi>n</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(\log n)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mop">lo<span style="margin-right:0.01389em;">g</span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathnormal">n</span><span class="mclose">)</span></span></span></span> 的时间复杂度内实现：<br />
 <strong>单点修改</strong>、<strong>区间修改</strong>（区间加、区间乘、区间赋值等）、<strong>区间查询</strong>（区间求和、区间最值等）等操作。</p>
 <p>线段树<strong>将每个长度不为 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn></mrow><annotation encoding="application/x-tex">1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span></span></span></span> 的区间划分成左右两个区间递归求解，把整个线段划分为一个树形结构，通过合并左右两区间信息来求得该区间的信息</strong>。这样可方便进行大部分的区间操作。</p>
@@ -169,7 +169,7 @@
 </ol>
 <h2 id="区间修改与懒惰标记"><a class="anchor" href="#区间修改与懒惰标记">#</a> 区间修改与懒惰标记</h2>
 <p>如果要求修改区间 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">[</mo><mi>l</mi><mo separator="true">,</mo><mi>r</mi><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">[l, r]</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">[</span><span class="mord mathnormal" style="margin-right:0.01968em;">l</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">r</span><span class="mclose">]</span></span></span></span> ，把所有包含在区间 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">[</mo><mi>l</mi><mo separator="true">,</mo><mi>r</mi><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">[l, r]</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">[</span><span class="mord mathnormal" style="margin-right:0.01968em;">l</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">r</span><span class="mclose">]</span></span></span></span> 中的节点都遍历、修改一次，时间复杂度无法承受。</p>
-<p>==<strong>「懒惰标记」</strong>== 就是通过延迟对节点信息的更改，从而减少可能不必要的操作次数。每次执行修改时，<strong>通过打标记的方法表明该节点对应的区间在某一次操作中被更改，但不更新该节点的子节点的信息。实质性的修改则在下一次访问带有标记的节点时才进行</strong>。</p>
+<p>==「懒惰标记」== 就是通过延迟对节点信息的更改，从而减少可能不必要的操作次数。每次执行修改时，<strong>通过打标记的方法表明该节点对应的区间在某一次操作中被更改，但不更新该节点的子节点的信息。实质性的修改则在下一次访问带有标记的节点时才进行</strong>。</p>
 <p>实现中修改与查询时：</p>
 <ol>
 <li><strong>当前区间为修改区间的子集时直接修改当前节点的值，然后打标记，结束修改。</strong></li>
@@ -188,7 +188,7 @@
       <i class="ic i-calendar-check"></i>
     </span>
     <span class="text">更新于</span>
-    <time title="修改时间：2023-03-27 15:39:06" itemprop="dateModified" datetime="2023-03-27T15:39:06+08:00">2023-03-27</time>
+    <time title="修改时间：2023-03-27 16:43:51" itemprop="dateModified" datetime="2023-03-27T16:43:51+08:00">2023-03-27</time>
   </span>
 </div>
 
@@ -245,10 +245,10 @@
     <div class="item right">
       
 
-  <a href="/OI/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/ST%E8%A1%A8/" itemprop="url" rel="next" data-background-image="&#x2F;assets&#x2F;002.jpg" title="ST表">
+  <a href="/OI/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E5%B9%B6%E6%9F%A5%E9%9B%86/" itemprop="url" rel="next" data-background-image="&#x2F;assets&#x2F;003.jpg" title="并查集">
   <span class="type">下一篇</span>
   <span class="category"><i class="ic i-flag"></i> 数据结构</span>
-  <h3>ST表</h3>
+  <h3>并查集</h3>
   </a>
 
     </div>
@@ -271,7 +271,7 @@
       </div>
       <div class="related panel pjax" data-title="系列文章">
         <ul>
-          <li><a href="/OI/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E5%B9%B6%E6%9F%A5%E9%9B%86/" rel="bookmark" title="并查集">并查集</a></li><li><a href="/OI/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/ST%E8%A1%A8/" rel="bookmark" title="ST表">ST表</a></li><li class="active"><a href="/OI/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E7%BA%BF%E6%AE%B5%E6%A0%91/" rel="bookmark" title="线段树">线段树</a></li>
+          <li><a href="/OI/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/ST%E8%A1%A8/" rel="bookmark" title="ST表">ST表</a></li><li><a href="/OI/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E5%B9%B6%E6%9F%A5%E9%9B%86/" rel="bookmark" title="并查集">并查集</a></li><li class="active"><a href="/OI/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E7%BA%BF%E6%AE%B5%E6%A0%91/" rel="bookmark" title="线段树">线段树</a></li>
         </ul>
       </div>
       <div class="overview panel" data-title="站点概览">
@@ -359,7 +359,7 @@
         <div class="status">
   <div class="copyright">
     
-    &copy; 2010 – 
+    &copy; 2020 – 
     <span itemprop="copyrightYear">2023</span>
     <span class="with-love">
       <i class="ic i-sakura rotate"></i>
