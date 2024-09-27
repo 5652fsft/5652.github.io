@@ -2247,6 +2247,12 @@ main >.inner {
 .social .item.twitter i {
   color: #00aff0;
 }
+.social .item.pixiv::before {
+  background-color: #0197fa;
+}
+.social .item.pixiv i {
+  color: #0197fa;
+}
 .social .item.email::before {
   background-color: #55acd5;
 }
@@ -3606,6 +3612,7 @@ main >.inner {
 }
 #loading {
   background-color: var(--grey-1);
+  display: none;
 }
 .cat {
   position: relative;
